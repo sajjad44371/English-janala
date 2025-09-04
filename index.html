@@ -33,7 +33,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- stylesheet link -->
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- header start -->
@@ -212,7 +212,49 @@
         </div>
       </section>
       <!-- banner section end -->
+
+      <!-- vocabularies section start  -->
+      <section class="vocabularies w-11/12 mx-auto mt-[200px] mb-5">
+        <div class="vocabularies-content">
+          <h2 class="text-4xl font-bold text-center">
+            <span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
+          </h2>
+          <div class="button-group mx-auto my-10">
+            <div
+              id="lesson-container"
+              class="md:w-8/12 lg:w-9/12 mx-auto flex flex-wrap justify-evenly xl:justify-between items-center gap-5"
+            ></div>
+          </div>
+          <div
+            id="lets-learn"
+            class="vocabularies-body text-center bg-[#f8f8f8] rounded-[24px] py-[64px]"
+          >
+            <p class="bangla text-[#79716B]">
+              আপনি এখনো কোন Lesson Select করেন নি
+            </p>
+            <h2 class="bangla text-4xl font-medium mt-3">
+              একটি Lesson Select করুন।
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="voca-word"
+        class="vocabularies-word bg-[#f8f8f8] w-11/12 mx-auto rounded-[24px]"
+      >
+        <div
+          id="word-container"
+          class="p-7 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7"
+        >
+          <!-- single word card  -->
+        </div>
+      </section>
+      <!-- vocabularies section end  -->
     </main>
     <!-- main section end -->
+
+    <!-- js link  -->
+    <script src="./js/script.js"></script>
   </body>
 </html>
