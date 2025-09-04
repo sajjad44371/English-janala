@@ -36,6 +36,183 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <main class=""></main>
+    <!-- header start -->
+    <header class="bg-[#badeff42] shadow-sm">
+      <!-- navbar -->
+      <div class="navbar w-11/12 mx-auto py-4">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li>
+                <a href="" class=""
+                  ><i class="fa-solid fa-circle-question"></i> FAQ</a
+                >
+              </li>
+              <li>
+                <a href="" class=""
+                  ><i class="fa-solid fa-book-open"></i> Learn</a
+                >
+              </li>
+              <li>
+                <a href="" class=""
+                  ><i class="fa-solid fa-arrow-right-from-bracket"></i>
+                  Logout</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- logo -->
+          <a href="./index.html" class="flex items-center gap-1">
+            <span class="text-xl font-semibold">English</span>
+            <img src="./assets/logo.png" alt="logo" />
+            <span class="bangla text-xl font-semibold">জানালা</span>
+          </a>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+          <ul class="flex justify-between items-center gap-4">
+            <li>
+              <a href="" class="btn btn-outline btn-primary"
+                ><i class="fa-solid fa-circle-question"></i> FAQ</a
+              >
+            </li>
+            <li>
+              <a href="" class="btn btn-outline btn-primary"
+                ><i class="fa-solid fa-book-open"></i> Learn</a
+              >
+            </li>
+            <li>
+              <a href="" class="btn btn-outline btn-primary"
+                ><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main section start -->
+    <main>
+      <!-- banner section start -->
+      <section class="banner py-5 w-11/12 mx-auto">
+        <div
+          class="banner-content flex flex-col-reverse md:flex-row justify-between items-center gap-12"
+        >
+          <div class="banner-left flex-1 pr-4 text-center md:text-left">
+            <h2 class="text-4xl font-bold">
+              <span class="text-[#00BCFF]">English</span> is Easy!!
+            </h2>
+            <p class="bangla font-medium text-2xl my-6">
+              আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
+              আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে
+              যাবে অন্য একটি Level এ
+            </p>
+            <!-- form -->
+
+            <!-- user name -->
+            <div class="username">
+              <label class="input validator">
+                <svg
+                  class="h-[1em] opacity-50"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke-width="2.5"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </g>
+                </svg>
+                <input
+                  type="text"
+                  required
+                  placeholder="Username"
+                  pattern="[A-Za-z][A-Za-z0-9\-]*"
+                  minlength="3"
+                  maxlength="30"
+                  title="Only letters, numbers or dash"
+                />
+              </label>
+              <p class="validator-hint">
+                Must be 3 to 30 characters. Containing only letters, numbers or
+                dash.
+              </p>
+            </div>
+
+            <!-- password -->
+            <div class="password">
+              <label class="input validator">
+                <svg
+                  class="h-[1em] opacity-50"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke-width="2.5"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <path
+                      d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"
+                    ></path>
+                    <circle
+                      cx="16.5"
+                      cy="7.5"
+                      r=".5"
+                      fill="currentColor"
+                    ></circle>
+                  </g>
+                </svg>
+                <input
+                  type="password"
+                  required
+                  placeholder="Password"
+                  minlength="8"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  title="Must be more than 8 characters, including number, lowercase letter, uppercase letter"
+                />
+              </label>
+              <p class="validator-hint hidden">
+                Must be more than 8 characters, including: At least one number
+                && At least one lowercase letter && At least one uppercase
+                letter
+              </p>
+            </div>
+            <button class="btn btn-primary mt-6">Get Started</button>
+          </div>
+          <div class="banner-right flex-1">
+            <img src="./assets/hero-student.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- banner section end -->
+    </main>
+    <!-- main section end -->
   </body>
 </html>
