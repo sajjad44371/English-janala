@@ -102,7 +102,9 @@ const displayLevelWord = (words) => {
                 <div
                   class="icon-right rounded-xl bg-[#1a91ff1a] hover:bg-[#1a91ff4d] duration-300 text-[#374957]"
                 >
-                  <button><i class="fa-solid fa-volume-high p-4 cursor-pointer"></i></button>
+                  <button onclick="pronounceWord('${
+                    word.word
+                  }')"><i class="fa-solid fa-volume-high p-4 cursor-pointer"></i></button>
                 </div>
               </div>
             </div>
@@ -165,3 +167,35 @@ const manageSpinner = (status) => {
 };
 
 loadLessons();
+
+// search button
+const searchButton = document.getElementById("btn-search");
+searchButton.addEventListener("click", function () {
+  const searchInput = document.getElementById("input-search");
+  const searchValue = searchInput.value.trim().toLowerCase();
+
+  letsLearn.style.display = "none";
+  vocaWord.style.display = "block";
+
+  const lessonBtn = document.getElementsByClassName("lesson-btn");
+  for (const singleBtn of lessonBtn) {
+    singleBtn.classList.remove("active");
+  }
+
+  fetch("https://openapi.programming-hero.com/api/words/all")
+    .then((res) => res.json())
+    .then((word) => {
+      const allWords = word.data;
+      const filterWords = allWords.filter((word) =>
+        word.word.toLowerCase().includes(searchValue)
+      );
+      displayLevelWord(filterWords);
+    });
+});
+
+// speak function
+function pronounceWord(word) {
+  const utterance = new SpeechSynthesisUtterance(word);
+  utterance.lang = "en-EN"; // English
+  window.speechSynthesis.speak(utterance);
+}

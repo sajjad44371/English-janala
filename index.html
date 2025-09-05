@@ -63,12 +63,12 @@
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a href="" class=""
+                <a href="#faq" class=""
                   ><i class="fa-solid fa-circle-question"></i> FAQ</a
                 >
               </li>
               <li>
-                <a href="" class=""
+                <a href="#learn" class=""
                   ><i class="fa-solid fa-book-open"></i> Learn</a
                 >
               </li>
@@ -90,12 +90,12 @@
         <div class="navbar-end hidden lg:flex">
           <ul class="flex justify-between items-center gap-4">
             <li>
-              <a href="" class="btn btn-outline btn-primary"
+              <a href="#faq" class="btn btn-outline btn-primary"
                 ><i class="fa-solid fa-circle-question"></i> FAQ</a
               >
             </li>
             <li>
-              <a href="" class="btn btn-outline btn-primary"
+              <a href="#learn" class="btn btn-outline btn-primary"
                 ><i class="fa-solid fa-book-open"></i> Learn</a
               >
             </li>
@@ -214,7 +214,7 @@
       <!-- banner section end -->
 
       <!-- vocabularies section start  -->
-      <section class="vocabularies w-11/12 mx-auto mt-[150px] mb-5">
+      <section id="learn" class="vocabularies w-11/12 mx-auto mt-[150px] mb-5">
         <div class="vocabularies-content">
           <h2 class="text-4xl font-bold text-center">
             <span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
@@ -225,6 +225,43 @@
               class="md:w-8/12 lg:w-9/12 mx-auto flex flex-wrap justify-evenly xl:justify-between items-center gap-5"
             ></div>
           </div>
+
+          <!-- search box -->
+          <div class="search flex justify-center items-center mt-5 mb-8">
+            <div class="join">
+              <div>
+                <label class="input validator join-item">
+                  <svg
+                    class="h-[1em] opacity-50"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                      stroke-width="2.5"
+                      fill="none"
+                      stroke="currentColor"
+                    >
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <path d="m21 21-4.3-4.3"></path>
+                    </g>
+                  </svg>
+                  <input
+                    id="input-search"
+                    type="search"
+                    placeholder="Search word"
+                    required
+                  />
+                </label>
+              </div>
+              <button id="btn-search" class="btn btn-primary join-item">
+                Search
+              </button>
+            </div>
+          </div>
+          <!-- search box -->
+
           <div
             id="lets-learn"
             class="vocabularies-body text-center bg-[#f8f8f8] rounded-[24px] py-[64px]"
@@ -278,8 +315,130 @@
         </div>
       </dialog>
       <!-- modal  -->
+
+      <!-- faq section start  -->
+      <section id="faq" class="faq my-[150px]">
+        <div class="faq-container w-11/12 mx-auto">
+          <h2 class="text-4xl font-bold text-center">
+            <span class="text-[#00BCFF]">Frequently</span> Asked Questions
+          </h2>
+          <div class="accordian py-[80px]">
+            <!-- single item start -->
+            <div
+              class="collapse collapse-plus bg-base-100 bg-[#F8F8F8] rounded-2xl mb-5"
+            >
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div class="collapse-title font-semibold">
+                1. How can I start learning English on this website?
+              </div>
+              <div class="collapse-content text-sm">
+                You can start by exploring our beginner lessons, interactive
+                exercises, and quizzes. We also offer structured courses to
+                guide you step by step.
+              </div>
+            </div>
+            <!-- single item end -->
+            <!-- single item start -->
+            <div
+              class="collapse collapse-plus bg-base-100 bg-[#F8F8F8] rounded-2xl mb-5"
+            >
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title font-semibold">
+                2. Is this website free to use?
+              </div>
+              <div class="collapse-content text-sm">
+                Yes, it’s free to use, but you need to create an account.
+              </div>
+            </div>
+            <!-- single item end -->
+            <!-- single item start -->
+            <div
+              class="collapse collapse-plus bg-base-100 bg-[#F8F8F8] rounded-2xl mb-5"
+            >
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title font-semibold">
+                3. Do I need to create an account?
+              </div>
+              <div class="collapse-content text-sm">
+                Yes, you need to create a free account to use the website.
+              </div>
+            </div>
+            <!-- single item end -->
+            <!-- single item start -->
+            <div
+              class="collapse collapse-plus bg-base-100 bg-[#F8F8F8] rounded-2xl mb-5"
+            >
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title font-semibold">
+                4. How can I build my English vocabulary?
+              </div>
+              <div class="collapse-content text-sm">
+                You can build your English vocabulary by reading regularly,
+                learning new words daily, practicing with flashcards, using the
+                words in sentences, and engaging in conversations to strengthen
+                memory and usage.
+              </div>
+            </div>
+            <!-- single item end -->
+            <!-- single item start -->
+            <div
+              class="collapse collapse-plus bg-base-100 bg-[#F8F8F8] rounded-2xl mb-5"
+            >
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title font-semibold">
+                5. Do you offer certificates for completed courses?
+              </div>
+              <div class="collapse-content text-sm">
+                No, we don’t provide certificates for completed courses.
+              </div>
+            </div>
+            <!-- single item end -->
+          </div>
+        </div>
+      </section>
+      <!-- faq section start  -->
     </main>
     <!-- main section end -->
+
+    <!-- footer start  -->
+    <footer class="border-t-2 border-[#FFEBEB]">
+      <footer
+        class="container w-11/12 mx-auto py-[80px] flex flex-col sm:flex-row justify-center sm:justify-between items-center sm:items-end gap-8 sm:gap-0"
+      >
+        <div class="text-center sm:text-left">
+          <a href="./index.html" class="flex justify-center sm:justify-start items-center gap-1">
+            <span class="text-xl font-semibold">English</span>
+            <img src="./assets/logo.png" alt="logo" />
+            <span class="bangla text-xl font-semibold">জানালা</span>
+          </a>
+          <h3 class="bangla text-xl font-medium mt-5 mb-2">
+            ইংরেজি শিখুন সহজে
+          </h3>
+          <p class="text-sm">
+            &copy; <span id="year"></span> English Janala. All rights reserved.
+          </p>
+          <p class="text-sm">
+            Connect with me on
+            <a
+              href="https://www.facebook.com/sajjad44371"
+              target="_blank"
+              class="text-blue-400 hover:underline"
+            >
+              Facebook
+            </a>
+          </p>
+        </div>
+        <div>
+          <p class="text-sm text-[#18181B] font-bold">Follow us</p>
+          <ul class="flex justify-between items-center gap-4">
+            <li><a href="https://github.com/sajjad44371" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="" target="_blank"><i class="fa-brands fa-youtube"></i></i></a></li>
+            <li><a href="https://www.facebook.com/sajjad44371" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+    </footer>
+    <!-- footer end  -->
 
     <!-- js link  -->
     <script src="./js/script.js"></script>
